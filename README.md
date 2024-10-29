@@ -3,10 +3,6 @@ Project for Azure Coud IoT
 
 "ThunderCheck Smart House"
 
-We are developing a device that connects to all the appliances in your home (lamp, fan, kettle, etc.). This device will send information to the cloud about how much electricity you are using. Additionally, you will be able to remotely interact with the appliances connected to the device. The cloud service will also provide recommendations if you are consuming too much energy
-
-  Smart Home Energy Hub
-
 Imagine a compact, intelligent device that can seamlessly integrate with all your household appliances—from your lights and fans to your kettle and washing machine. Our ThunderCheck Smart House connects to each appliance in your home, tracking electricity usage in real-time and allowing you to monitor and manage your energy consumption with ease. By analyzing data in the cloud, this device provides valuable insights into your energy habits and offers recommendations to optimize usage, all while giving you the power to control appliances remotely.
 
   Key Features
