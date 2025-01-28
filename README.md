@@ -2,7 +2,7 @@
 
 ## 🌐 Project Overview
 
-**ThunderCheck Smart House** is an innovative IoT device designed to seamlessly integrate with household appliances, from lights and fans to kettles and washing machines. This device tracks real-time electricity usage, sending data to the cloud for analysis, enabling you to monitor and manage energy consumption efficiently. 
+**ThunderCheck Smart House** is an innovative IoT device designed to seamlessly integrate with household appliances, from lights and fans to kettles and washing machines. This device tracks real-time electricity usage, sending data to the cloud for analysis, enabling you to monitor and manage energy consumption efficiently.
 
 With ThunderCheck, you can gain valuable insights into your energy habits and receive actionable recommendations to optimize usage. Additionally, the device allows you to remotely control appliances, ensuring both convenience and energy savings.
 
@@ -58,21 +58,13 @@ With ThunderCheck, you can gain valuable insights into your energy habits and re
 
 ---
 
-## ⚙️ Future Features *(TO-DO)*
-
-- **Voice Control Integration** (e.g., Amazon Alexa, Google Assistant) 🗣️
-- **AI-Powered Predictive Energy Savings** 🤖
-- **Integration with other Smart Home Devices** 🏡
-  
----
-
-## 🛠️ Tech Stack
+## ⚙️ Tech Stack
 
 - **IoT Devices**: Custom-built appliance adapters
-- **Cloud Platform**: Azure IoT
-- **Data Storage**: InfluxDB
-- **Real-Time Messaging**: MQTT
-- **Frontend**: Web interface for remote control and monitoring
+- **Data Storage**: InfluxDB (for time-series data storage)
+- **Real-Time Messaging**: HiveMQ (for message brokering via MQTT)
+- **Frontend**: Web interface for remote control and monitoring (powered by MQTT)
+- **Backend**: Python for device simulation and data communication
 
 ---
 
