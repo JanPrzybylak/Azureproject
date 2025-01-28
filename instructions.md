@@ -1,48 +1,96 @@
-## Step 1: Install Dependencies
+# IoT Integration with HiveMQ and InfluxDB
 
-To get started, you'll need to install a few dependencies. These include libraries for MQTT and InfluxDB interaction.
+This guide walks you through setting up a pipeline to handle IoT data using HiveMQ (MQTT) and InfluxDB.
 
-Run the following command to install the required packages:
+## Step 1: Install Required Libraries
+
+Ensure Python is installed on your system. Then, open a terminal or command prompt and run the following command to install the required Python libraries:
 
 ```bash
-pip install paho-mqtt influxdb-client
+pip install paho-mqtt influxdb-client pandas
 ```
-# Instructions for Deploying ThunderCheck Smart House
 
-## Step One:
-I registered on the InfluxDB Cloud platform, entered my details, and created my profile.
+---
 
-## Step Two:
-I familiarized myself with the panel on the left and clicked on "Load Data." After that, parameters appeared below, and I selected "Buckets."
+## Step 2: Set Up InfluxDB
 
-## Step Three:
-A page opened where I saw two Buckets that were created automatically. Then, I clicked on "Create Bucket" because I needed a new Bucket.
+### 1. Sign Up for InfluxDB Cloud
+Visit [InfluxDB Cloud](https://cloud2.influxdata.com/) and create an account.
 
-## Step Four:
-I was prompted to fill in the information to create the Bucket. I named it **"Iot_data"** and left two parameters unchanged: 
-- The first parameter "Delete Older Than"
-- The second parameter "30 days."
+### 2. Create a Bucket
+- Navigate to `Load Data` → `Buckets` in the left panel.
+- Click the **Create Bucket** button.
+- Name the bucket `Iot_data` and set the retention period to **30 days**.
 
-## Step Five:
-I saw the Bucket I created, then I entered it and saw a field where I could write SQL commands. On the left, I selected my Bucket.
+### 3. Get Your API Token
+- Go to the **API Tokens** section in the InfluxDB UI.
+- Copy the token and keep it safe for use in your Python script.
 
-## Step Six:
-I went to the "Load Data" section and saw many parameters. I selected "Python," and instructions appeared on how to do it. On the left, there were step-by-step stages. 
-- First, I was greeted by the "Overview" section, which didn't have the necessary information.  
-- Then, I clicked the "Next" button and moved to another section called "Install Dependencies," where there were two commands that we entered into the Visual Studio Code terminal.
-  - The first command was `pip install influxdb3-python.` After this command, the download started in the terminal.
-  - After everything loaded, we entered the second command: `pip install pandas.` After the second command finished loading, we moved to the next step called "Get Token," where we found the API token that we added to our script:
-    ```bash
-    SM3hB7p6ij3sC8LjvqVC91RhuJZkQKOE_YQtYzbAKQv-hXw9UCL5MqKsYJbYgElY7HaCdjwUbHpv-KUiuss11A==
-    ```
+### 4. Test the Bucket
+- Open **Data Explorer**.
+- Select the `Iot_data` bucket and confirm its readiness by checking for available data.
 
-## Step Seven:
-After that, we went to "Data Explorer," where we selected the Bucket **"Iot_data"** in the parameters and chose **"iot_measurement"** in the Measurement parameter. Additional parameters appeared.
+---
 
-## Step Eight:
-In the appeared **"Fields"** parameter, we checked the boxes, and then we did the same in the appeared **"Tag Keys"** parameter, where we selected **"device"** and checked all the boxes.
+## Step 3: Set Up HiveMQ (MQTT)
 
-## Step Nine:
-On the right, there was a field for SQL commands where we wrote:
-```sql
-SELECT * FROM "iot_measurement".
+### 1. Sign Up for HiveMQ
+Visit [HiveMQ Cloud](https://www.hivemq.com/) and create an account.
+
+### 2. Create a New MQTT Broker
+- Once logged in, set up a new MQTT broker using the default settings.
+
+### 3. Note Down MQTT Credentials
+- Save the **broker URL**, **username**, and **password** provided during the broker setup.
+
+### 4. Test the Connection
+- Use an MQTT client tool (e.g., [MQTT.fx](https://mqttfx.jensd.de/)) to test the connection by sending and receiving sample messages.
+
+---
+
+## Step 4: Download and Modify the Python Script
+
+### 1. Download the Script
+Clone the project repository or download the Python file.
+
+### 2. Add Your Credentials
+Update the script with your:
+- InfluxDB URL
+- API Token
+- HiveMQ Broker URL
+- HiveMQ Username and Password
+
+### 3. Run the Script
+Execute the script using the following command:
+
+```bash
+python your_script_name.py
+```
+
+---
+
+## Step 5: Send Commands via HiveMQ Dashboard
+
+### 1. Login to HiveMQ
+Use your account credentials to access the HiveMQ dashboard.
+
+### 2. Send Commands
+Publish messages to the topic (e.g., `iot/devices/commands`) in the following format:
+
+```json
+{
+  "device": "lamp",
+  "command": "on"
+}
+```
+
+### 3. Verify Output
+Observe the output and verify the device's state in the script logs.
+
+---
+
+## Additional Notes
+- Ensure all credentials are kept secure.
+- Verify network connectivity for smooth data transfer.
+
+Feel free to modify and extend the script to fit your specific IoT use case!
