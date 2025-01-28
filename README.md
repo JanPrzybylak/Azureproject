@@ -97,4 +97,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 💬 Get in Touch
 
 - **GitHub**: [JanPrzybylak/Azureproject](https://github.com/JanPrzybylak/Azureproject)
-- **Email**: janprzybylak@example.com
+- **Email**: janprzybylak03@gmail.com
