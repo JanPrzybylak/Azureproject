@@ -6,6 +6,7 @@ Run the following command to install the required packages:
 
 ```bash
 pip install paho-mqtt influxdb-client
+```
 # Instructions for Deploying ThunderCheck Smart House
 
 ## Step One:
