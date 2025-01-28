@@ -31,9 +31,9 @@ I went to the "Load Data" section and saw many parameters. I selected "Python," 
 - First, I was greeted by the "Overview" section, which didn't have the necessary information.  
 - Then, I clicked the "Next" button and moved to another section called "Install Dependencies," where there were two commands that we entered into the Visual Studio Code terminal.
   - The first command was `pip install influxdb3-python.` After this command, the download started in the terminal.
-  - After everything loaded, we entered the second command: `pip install pandas.` After the second command finished loading, we moved to the next step called "Get Token," where we found the command that we added to our script:
+  - After everything loaded, we entered the second command: `pip install pandas.` After the second command finished loading, we moved to the next step called "Get Token," where we found the API token that we added to our script:
     ```bash
-    export INFLUXDB_TOKEN=9Hz8VmAi38hmWkXXfW0jVO_iJ1cYU3zBxEiNu78qmX-oMvmVggo5uoBPs1rNxzZCSZRP79Ch4eTb0DQI-deyuQ==
+    
     ```
 
 ## Step Seven:
