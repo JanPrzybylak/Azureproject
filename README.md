@@ -1,32 +1,100 @@
-# Azureproject
-Project for Azure Coud IoT
+# AzureProject - ThunderCheck Smart House
 
-"ThunderCheck Smart House"
+## 🌐 Project Overview
 
-Imagine a compact, intelligent device that can seamlessly integrate with all your household appliances—from your lights and fans to your kettle and washing machine. Our ThunderCheck Smart House connects to each appliance in your home, tracking electricity usage in real-time and allowing you to monitor and manage your energy consumption with ease. By analyzing data in the cloud, this device provides valuable insights into your energy habits and offers recommendations to optimize usage, all while giving you the power to control appliances remotely.
+**ThunderCheck Smart House** is an innovative IoT device designed to seamlessly integrate with household appliances, from lights and fans to kettles and washing machines. This device tracks real-time electricity usage, sending data to the cloud for analysis, enabling you to monitor and manage energy consumption efficiently. 
 
-  Key Features
+With ThunderCheck, you can gain valuable insights into your energy habits and receive actionable recommendations to optimize usage. Additionally, the device allows you to remotely control appliances, ensuring both convenience and energy savings.
 
-1. Universal Appliance Compatibility
-The ThunderCheck Smart House is designed to be compatible with most home appliances. It connects with a range of devices, including lamps, fans, kettles, washing machines, heaters, and more, enabling them to "speak" to each other and to you. Setup is simple, with plug-and-play capabilities for quick integration into your smart home ecosystem.
+---
 
-2. Real-Time Monitoring of Energy Consumption
-Track the power usage of individual appliances as well as your home’s total consumption. The device continuously monitors and records electricity usage data, which is then securely sent to the cloud. This provides you with a comprehensive, minute-by-minute view of how much energy each device consumes.
+## 🚀 Key Features
 
-3. Remote Control via Mobile App
-Access and manage your home appliances from anywhere, at any time. Through an intuitive mobile app, you can turn appliances on or off, set schedules, and adjust settings. This remote control feature enhances convenience and allows you to ensure no appliance is accidentally left on, even when you’re away from home.
+### 1. **Universal Appliance Compatibility**
+   - ThunderCheck Smart House is compatible with a wide range of appliances, including:
+     - Lights 💡
+     - Fans 🌬️
+     - Kettles ☕
+     - Washing Machines 🧺
+     - Heaters 🔥
+   - **Plug-and-play setup** for quick integration into your existing smart home ecosystem.
 
-4. Smart Energy Recommendations
-Utilizing data from your usage patterns, the cloud service generates personalized energy-saving tips and suggestions. If your energy usage spikes or exceeds recommended levels, the service will alert you and provide actionable insights on reducing consumption. These tips can include adjusting appliance settings, scheduling high-power tasks during off-peak hours, or replacing high-energy devices with more efficient ones.
+### 2. **Real-Time Monitoring of Energy Consumption**
+   - Track power usage of individual appliances as well as your entire home’s electricity consumption.
+   - Continuously records and securely sends usage data to the cloud for comprehensive energy insights.
 
-5. Automated Alerts and Safety Measures
-The ThunderCheck Smart House also offers an added layer of safety. It sends automated alerts if an appliance is drawing an unusual amount of power, signaling potential malfunction or overheating. This feature helps prevent electrical hazards and extends the lifespan of your appliances.
+### 3. **Remote Control via MQTT Web Interface**
+   - Easily control appliances remotely through a secure **MQTT-powered web interface**.
+   - **Monitor and manage** your home appliances from anywhere, at any time.
 
-6. Energy Cost Insights and Forecasting
-The system offers real-time updates on how much your energy usage costs. By tracking consumption trends, the device can forecast your monthly energy bill, enabling you to make informed adjustments before costs escalate.
+### 4. **Smart Energy Recommendations** *(TO-DO)*
+   - Personalized energy-saving suggestions based on your usage patterns.
+   - Alerts when energy usage exceeds thresholds, with tips to optimize power consumption:
+     - Schedule high-power tasks during off-peak hours ⏰
+     - Swap out inefficient devices for more energy-efficient models ⚡
 
-7. Customizable Automation and Scheduling
-Users can create custom schedules and automate certain appliances based on daily routines. For example, you can program lights to turn off when you leave the house or have the coffee maker start brewing when your alarm goes off. This not only saves energy but enhances daily convenience.
+### 5. **Automated Alerts & Safety Measures** *(TO-DO)*
+   - **Automatic alerts** for unusual power consumption patterns, signaling potential malfunctions or overheating 🔥.
+   - Prevent electrical hazards and **extend appliance lifespans** by addressing issues proactively.
 
-  Privacy and Security
-Data privacy and security are top priorities for our device. All communication between the device, the cloud, and your mobile app is encrypted. User data is stored securely, and users retain full control over how their data is used.
+### 6. **Energy Cost Insights & Forecasting** *(TO-DO)*
+   - Real-time updates on the cost of your energy consumption 💰.
+   - **Forecast your monthly bill** based on consumption trends, empowering you to adjust your habits before costs escalate.
+
+### 7. **Customizable Automation & Scheduling** *(TO-DO)*
+   - Create personalized schedules for appliances based on your routines:
+     - Automatically turn off lights when you leave the house 🏠💡
+     - Brew coffee when your alarm goes off ⏰☕
+   - Save energy and enhance convenience with **automated scheduling**.
+
+---
+
+## 🔐 Privacy and Security *(TO-DO)*
+
+**Data Privacy & Security** are top priorities. ThunderCheck ensures that all communication between the device, cloud, and mobile apps is fully encrypted. 
+
+- **User control** over data usage and privacy settings.
+- **Secure data storage** to protect your information.
+
+---
+
+## ⚙️ Future Features *(TO-DO)*
+
+- **Voice Control Integration** (e.g., Amazon Alexa, Google Assistant) 🗣️
+- **AI-Powered Predictive Energy Savings** 🤖
+- **Integration with other Smart Home Devices** 🏡
+  
+---
+
+## 🛠️ Tech Stack
+
+- **IoT Devices**: Custom-built appliance adapters
+- **Cloud Platform**: Azure IoT
+- **Data Storage**: InfluxDB
+- **Real-Time Messaging**: MQTT
+- **Frontend**: Web interface for remote control and monitoring
+
+---
+
+## 📢 How to Contribute
+
+We welcome contributions from the community! If you'd like to help improve ThunderCheck, feel free to fork the repo and submit a pull request. Here’s how you can contribute:
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and commit them: `git commit -am 'Add new feature'`
+4. Push to your branch: `git push origin feature/your-feature-name`
+5. Open a pull request to the `main` branch
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 💬 Get in Touch
+
+- **GitHub**: [JanPrzybylak/Azureproject](https://github.com/JanPrzybylak/Azureproject)
+- **Email**: janprzybylak@example.com
