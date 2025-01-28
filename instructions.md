@@ -33,7 +33,7 @@ I went to the "Load Data" section and saw many parameters. I selected "Python," 
   - The first command was `pip install influxdb3-python.` After this command, the download started in the terminal.
   - After everything loaded, we entered the second command: `pip install pandas.` After the second command finished loading, we moved to the next step called "Get Token," where we found the API token that we added to our script:
     ```bash
-SM3hB7p6ij3sC8LjvqVC91RhuJZkQKOE_YQtYzbAKQv-hXw9UCL5MqKsYJbYgElY7HaCdjwUbHpv-KUiuss11A==
+    SM3hB7p6ij3sC8LjvqVC91RhuJZkQKOE_YQtYzbAKQv-hXw9UCL5MqKsYJbYgElY7HaCdjwUbHpv-KUiuss11A==
     ```
 
 ## Step Seven:
